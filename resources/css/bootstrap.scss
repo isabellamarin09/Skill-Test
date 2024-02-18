@@ -1,0 +1,27 @@
+$primary: #0ac252;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+
+$theme-colors: (
+  primary: $primary
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto default pointer wait text move help not-allowed
+    )
+  )
+);
+
+@import "bootstrap/scss/bootstrap.scss";
